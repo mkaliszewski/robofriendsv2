@@ -1,0 +1,12 @@
+.box{
+
+	overflow-y: scroll;
+	height: 75vh;
+	border:2px solid #F9F9F9;
+}
+
+@media screen and (max-height: 680px) {
+.box{
+	height: 70vh;
+}
+}

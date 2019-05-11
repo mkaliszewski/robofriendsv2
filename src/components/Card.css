@@ -1,0 +1,71 @@
+h1{
+	margin: 0;
+	color:  black;
+
+} 
+
+h2{
+	margin: 0;
+}
+p{
+	line-height: 2px;
+}
+
+img{
+	width: 200px;
+	height: 200px;
+}
+
+div.card-container{
+	perspective: 700;
+
+}
+
+div.card{
+	position: relative;
+	width: 320px;
+	height: 320px;
+	transition: all 1s ease;
+	transform-style: preserve-3d;
+	text-align: center;
+}
+
+div .front, .back{
+	position:absolute;
+	top: 0;
+	left: 0;
+	width: 320px;
+	height: 320px;
+	backface-visibility: hidden;
+
+}
+
+div .back{
+	transform: rotateY(180deg);
+}
+
+.front h3{
+	margin-top: 30px;
+	text-shadow: 2px 2px 4px #ffffff;
+
+}
+div.card:hover, .card:active{
+transform: rotateY(180deg);
+}
+
+
+@media screen and (max-width: 480px) {
+img{
+	width:200px;
+	height:200px;
+}
+div.card{
+	width: 280px;
+}
+div .front, .back{
+	width: 280px;
+}
+}
+
+
+

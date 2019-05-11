@@ -1,0 +1,17 @@
+.companyField, .nameField {
+	display: inline-block;
+}
+
+
+@media screen and (max-width: 900px) {
+.companyField{
+	display: none;
+}
+.searchField{
+	display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+}

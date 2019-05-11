@@ -1,0 +1,109 @@
+@font-face {
+font-family: 'SEGA LOGO FONT';
+font-style: normal;
+font-weight: normal;
+src: local('SEGA LOGO FONT'), url('SEGA.woff') format('woff');
+}
+
+.header h1{
+	font-family: 'SEGA LOGO FONT';
+	color: white;
+	font-weight: 400;
+	letter-spacing: 0.5rem;
+	font-size: 3em;
+	margin: 32px 0px 20px 0px;
+	text-align: center;
+}
+
+.loadText h1{
+	font-family: 'SEGA LOGO FONT';
+	color: white;
+	font-weight: 400;
+	letter-spacing: 4rem;
+	font-size: 5rem;
+	text-align:center;
+	margin:30vh auto ;
+
+}
+
+.searchbox h1{
+	display: inline-block;
+	text-align: center;
+	color:white;
+	font-size: 1em;
+	padding:10px;
+}
+.searchboxDiv{
+	height:80px;
+	display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center
+}
+
+
+@media screen and (max-width: 900px) {
+.header h1 {
+	font-weight: 200;
+	letter-spacing: 0.1rem;
+	font-size: 2.5em;
+	display:block;
+	text-align: center;
+	vertical-align: middle;
+	margin: 26.8px 20px 20px 0px;
+
+  }
+.searchbox h1, .searchboxCompany{
+	display: none;
+}
+
+ .searchboxName{
+ 	display:flex;
+ 	text-align: center;
+ 	vertical-align: center;
+ 	height: 90px;
+ }
+
+.container{
+	display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+	}
+.loadText h1{
+	font-weight: 300;
+	letter-spacing: 1rem;
+	font-size: 2rem;
+}
+}
+@media screen and (max-width: 480px) {
+.header h1 {
+	font-weight: 200;
+	letter-spacing: 0.1rem;
+	font-size: 2.2em;
+	display:block;
+	text-align: center;
+	margin: 16px 0px 16px 0px;
+  }
+
+.container{
+	display: flex;
+	flex-direction: column;
+	
+	}
+.searchboxDiv{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+}
+.searchboxName{
+	height:65px;
+}
+
+}
+
