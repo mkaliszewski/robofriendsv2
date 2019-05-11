@@ -15,7 +15,7 @@ const Card = ({ id, name, email, phone, company, age }) =>{
       </div>
 
       <div className="back tc">
-      <h3>Company:<p><a href={`https://www.google.com/search?q=${company.toLowerCase().toString()}`}>{company}</a></p></h3>
+      <h3>Company:<p><a href={`https://www.google.com/search?q=${company.toLowerCase().toString()}`} target="_blank">{company}</a></p></h3>
       <h3>Age:<p>{age}</p></h3>
       <h3>Email adress:<p><a href={`mailto:${name.toLowerCase().toString()}@${company.toLowerCase().toString()}.com`} target="_top">{email}</a></p></h3>
       <h3>Phone number:<p><a href={`tel:${phone}`}>{phone}</a></p></h3>
